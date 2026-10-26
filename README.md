@@ -75,7 +75,11 @@ EventCraftAI is a web-based event planning platform that helps users plan events
 #### Vendor Reviews
 ![Reviews](<Screenshots/Reviews.jpg>)
 
-### 7. Admin Panel
+### 7. Website Design
+#### Website Layout
+![Website Layout](<Screenshots/Website layout.jpg>)
+
+### 8. Admin Panel
 #### Admin Dashboard
 ![Admin Dashboard](<Screenshots/Admin Dashboard .jpg>)
 
@@ -88,7 +92,7 @@ EventCraftAI is a web-based event planning platform that helps users plan events
 #### Manage Events
 ![Manage Events](<Screenshots/Manage Events.jpg>)
 
-### 8. System Design and Diagrams
+### 9. System Design and Diagrams
 #### Data Flow Diagram
 ![DFD](<Screenshots/DFD.jpg>)
 
@@ -113,16 +117,11 @@ EventCraftAI is a web-based event planning platform that helps users plan events
 #### Sequence Diagram
 ![Sequence Diagram](<Screenshots/Sequence Diagram.jpg>)
 
-### 9. Database
+####Website Flowchart
+![Frontend](<Screenshots/FC.jpg>)
+### 10. Database
 #### Database Structure
 ![Database](<Screenshots/database.jpg>)
 
 #### Database Structure - Additional View
 ![Database Additional View](<Screenshots/database1.jpg>)
-
-### 10. Website Design
-#### Website Layout
-![Website Layout](<Screenshots/Website layout.jpg>)
-
-#### Website Frontend
-![Frontend](<Screenshots/FC.jpg>)
