@@ -1,8 +1,8 @@
 EventCraft AI
  Screenshots
 
- 1. User Dashboard
+ AI Recommendation
 
-(Screenshots/User Dashboard.jpg)
+![AI Recommendation](Screenshots/AI%20Recommendation.jpg)
 
-The dashboard allows users to manage their events and view personalized vendor recommendations
+This feature recommends suitable event vendors based on the user's event details, budget, selected services, and preferences.
