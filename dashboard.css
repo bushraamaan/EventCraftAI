@@ -1,0 +1,355 @@
+/* assets/css/dashboard.css */
+
+/* --- Customer Dashboard Container --- */
+.customer-dashboard-container {
+    width: 100%; /* Make it take full width initially */
+    max-width: 1400px; /* Wider for dashboards */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding on all sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* --- Dashboard Header (Common to both customer and vendor) --- */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.dashboard-header h1 {
+    font-size: 2em;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+
+}
+
+.dashboard-header p {
+    color: var(--text-subtle);
+    font-size: 1.1em;
+}
+
+.dashboard-header > div {
+    margin-bottom: var(--spacing-sm);
+}
+
+.dashboard-header .btn {
+    margin-left: var(--spacing-sm);
+}
+
+/* --- Stats Grid (Customer & Vendor) --- */
+.customer-stats-grid,
+.vendor-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Slightly larger min-width for stats cards */
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.stat-card {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--light-grey-border); /* Consistent border */
+}
+
+.stat-card:hover {
+    transform: translateY(-5px); /* More pronounced lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.metric-value {
+    font-size: 2.5em; /* Larger metric values */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.metric-label {
+    color: var(--text-subtle);
+    font-size: 1em; /* Slightly larger label */
+}
+
+/* --- Dashboard Sections (Common to both customer and vendor) --- */
+.dashboard-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to two columns */
+    gap: var(--spacing-lg);
+}
+
+/* Styles for half-width sections */
+.section-card-half {
+    grid-column: span 1; /* Take up one column */
+}
+
+/* Styles for full-width sections */
+.section-card-full {
+    grid-column: 1 / -1; /* Span all columns */
+}
+
+
+.section-card {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+    border: 1px solid var(--light-grey-border); /* Consistent border */
+}
+
+.section-card h2 {
+    margin-top: 0;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-card h2 .btn {
+    font-size: 0.75em; /* Adjusted smaller font */
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 8px 15px; /* Adjusted padding */
+    border-radius: 8px; /* More rounded */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow */
+}
+
+.list-item {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--light-grey-border); /* Consistent border */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-item-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    flex-basis: 100%;
+}
+
+.list-item-meta {
+    font-size: 0.9em;
+    color: var(--text-subtle);
+    flex-basis: 100%;
+    margin-top: 5px;
+    display: flex; /* Make meta info a flex container */
+    align-items: center;
+    gap: 8px; /* Gap between icon and text, and status badge */
+}
+
+.list-item-meta i {
+    color: var(--primary-color);
+}
+
+.list-item .btn-link {
+    margin-top: var(--spacing-xs);
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(138, 43, 226, 0.1); /* Use primary color with opacity */
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.list-item .btn-link:hover {
+    background-color: rgba(138, 43, 226, 0.2);
+    text-decoration: none;
+}
+
+/* Status Badges - Centralized here for consistency */
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 15px; /* More rounded pill shape */
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevent badge text from wrapping */
+    margin-left: auto; /* Push badge to the right in flex container */
+}
+
+.status-planning {
+    background: #ffeaa7; /* Light yellow */
+    color: #fdcb6e; /* Darker yellow */
+}
+
+.status-active {
+    background: #55efc4; /* Light teal */
+    color: #00b894; /* Darker teal */
+}
+
+.status-completed {
+    background: #a29bfe; /* Light purple */
+    color: #6c5ce7; /* Darker purple */
+}
+
+.status-cancelled, .status-payment_failed { /* Combined for similar visual */
+    background: #ff7675; /* Light red */
+    color: #d63031; /* Darker red */
+}
+.status-pending { /* For general 'pending' status like bookings */
+    background: #c7d2e6; /* Light blue-grey */
+    color: #536c92; /* Darker blue-grey */
+}
+.status-refunded {
+    background: #b2ebf2; /* Light cyan */
+    color: #0097a7; /* Dark cyan */
+}
+
+
+.empty-state {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-subtle);
+}
+
+/* --- Vendor Dashboard Specifics --- */
+.vendor-dashboard {
+    max-width: 1400px; /* Wider max-width for vendors too */
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    box-sizing: border-box;
+}
+
+.vendor-header .rating {
+    font-size: 1.1em;
+    color: var(--warning-color);
+    font-weight: 600;
+}
+
+.upcoming-bookings h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.booking-item .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+
+.calendar-widget {
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Consistent shadow */
+    border: 1px solid var(--light-grey-border); /* Consistent border */
+}
+
+/* FullCalendar Custom Styles (from vendor.css, integrated here for dashboard context) */
+#availability-calendar {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.fc-event {
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid transparent;
+    color: var(--text-dark);
+}
+
+.fc-event-available {
+    background: #e6ffe6;
+    border-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+.fc-event-booked {
+    background: #ffe6e6;
+    border-color: #ef9a9a;
+    color: #b71c1c;
+}
+
+.fc-event-blocked {
+    background: #f0f0f0;
+    border-color: #bdbdbd;
+    color: #424242;
+}
+
+/* NEW: Styles for Activity Log (consistent with admin dashboard) */
+.activity-log {
+    border-top: 1px solid #eee; /* Subtle top border */
+    padding-top: 15px; /* Space from heading */
+}
+.activity-item {
+    display: flex;
+    align-items: flex-start; /* Align icon to the top of message */
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.activity-item:last-child {
+    border-bottom: none;
+}
+.activity-icon {
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    font-size: 1.4em; /* Slightly larger icon */
+    color: var(--primary-color);
+    width: 30px; /* Fixed width for consistent alignment */
+    text-align: center;
+}
+.activity-content {
+    flex-grow: 1; /* Allow content to take remaining space */
+}
+.activity-message {
+    font-size: 0.95em;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+.activity-time {
+    font-size: 0.8em;
+    color: var(--text-subtle);
+    margin-top: 5px;
+    display: flex; /* For aligning time and view link */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* --- Responsive Adjustments (Dashboard Specific) --- */
+@media (max-width: 992px) {
+    .dashboard-sections {
+        grid-template-columns: 1fr; /* Stack all sections vertically on medium screens */
+    }
+    .section-card-half {
+        grid-column: span 1 / auto; /* Reset span for stacking */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dashboard-header > div:last-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .dashboard-header .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: var(--spacing-sm);
+    }
+    .customer-stats-grid,
+    .vendor-stats {
+        grid-template-columns: 1fr;
+    }
+}
