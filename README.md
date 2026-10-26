@@ -1,8 +1,5 @@
-EventCraft AI
+## EventCraft AI
 
- Screenshots
-
-#Frontend
  
 ## Project Screenshots
 
