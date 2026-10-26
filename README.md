@@ -1,118 +1,128 @@
-## EventCraft AI
 
- 
-## Project Screenshots
+# EventCraftAI
+### AI-Powered Event Planning and Vendor Recommendation System
+
+EventCraftAI is a web-based event planning platform that helps users plan events, discover vendors, manage bookings, and receive AI-based vendor recommendations according to their requirements and budget.
+
+## Screenshots
 
 ### 1. User Interface
-
 #### User Dashboard
 ![User Dashboard](<Screenshots/User Dashboard.jpg>)
-
-The dashboard allows users to manage events and access relevant features.
 
 #### Registration Page
 ![Registration Page](<Screenshots/Registration Page.jpg>)
 
-Allows new users to create an account.
-
 #### Login Page
 ![Login Page](<Screenshots/Login Page.jpg>)
 
-Provides account login functionality.
+#### User Profile
+![User Profile](<Screenshots/User Profile   .jpg>)
 
 #### User Events
 ![User Events](<Screenshots/User Events.jpg>)
 
-Allows users to view and manage their events.
-
-### 2. AI Recommendation System
-
+### 2. AI-Based Vendor Recommendation
 #### AI Recommendation
 ![AI Recommendation](<Screenshots/AI Recommendation.jpg>)
-
-Recommends suitable vendors based on event requirements and budget.
 
 #### AI Input Form
 ![Input Form](<Screenshots/Input form.jpg>)
 
-Collects event details and preferences used to generate vendor recommendations.
-
 ### 3. Vendor Management
-
 #### Vendor Dashboard
 ![Vendor Dashboard](<Screenshots/Vendor Dashboard .jpg>)
-
-Provides vendors with access to their dashboard and service management features.
 
 #### Vendor Profile
 ![Vendor Profile](<Screenshots/Vendor Profile.jpg>)
 
-Displays vendor information and profile details.
+#### Vendor Categories
+![Vendor Categories](<Screenshots/Vendor Categories.jpg>)
 
 #### Vendor Portfolio
 ![Portfolio](<Screenshots/Portfolio.jpg>)
 
-Showcases vendor work and portfolio images.
+#### Manage Services
+![Manage Services](<Screenshots/Manage Services .jpg>)
 
-### 4. Booking and Communication
+#### Manage Availability
+![Manage Availability](<Screenshots/Manage Availability .jpg>)
 
+### 4. Booking Management
 #### Booking Form
 ![Booking Form](<Screenshots/Booking Form.jpg>)
-
-Allows users to submit vendor booking requests.
 
 #### Booking Details
 ![Booking Details](<Screenshots/Booking Details.jpg>)
 
-Displays booking information.
+#### Booking Request
+![Booking Request](<Screenshots/Booking Request .jpg>)
 
-#### Chat
+#### Booking Approved
+![Booking Approved](<Screenshots/Booking Approved .jpg>)
+
+#### Booking Confirmed
+![Booking Confirmed](<Screenshots/Booking Confirmed .jpg>)
+
+### 5. Chat and Notifications
+#### Chat System
 ![Chat](<Screenshots/Chat.jpg>)
 
-Supports communication between users and vendors.
-
-#### Email Notifications
+#### Email Notification
 ![Email Notification](<Screenshots/Email Notification.jpg>)
 
-Displays email notification functionality.
+### 6. Reviews and Ratings
+#### Vendor Reviews
+![Reviews](<Screenshots/Reviews.jpg>)
 
-### 5. Admin Panel
-
+### 7. Admin Panel
 #### Admin Dashboard
 ![Admin Dashboard](<Screenshots/Admin Dashboard .jpg>)
-
-Provides administrative access to platform management.
 
 #### Manage Users
 ![Manage Users](<Screenshots/Manage Users.jpg>)
 
-Allows the administrator to manage user accounts.
-
 #### Manage Vendors
 ![Manage Vendors](<Screenshots/Manage Vendors.jpg>)
 
-Allows the administrator to manage vendor accounts.
+#### Manage Events
+![Manage Events](<Screenshots/Manage Events.jpg>)
 
-### 6. System Design and Database
-
+### 8. System Design and Diagrams
 #### Data Flow Diagram
 ![DFD](<Screenshots/DFD.jpg>)
 
-Illustrates the flow of data through the system.
+#### Data Flow Diagram - Level 1
+![DFD Level 1](<Screenshots/DFD1.jpg>)
+
+#### Data Flow Diagram - Level 2
+![DFD Level 2](<Screenshots/DFD2.png>)
 
 #### Entity Relationship Diagram
 ![ERD](<Screenshots/ERD.jpg>)
 
-Illustrates the relationships between database entities.
+#### Use Case Diagram - Admin
+![Admin Use Case Diagram](<Screenshots/UCD Admin.jpg>)
 
-#### Database
+#### Use Case Diagram - User
+![User Use Case Diagram](<Screenshots/UCD User.jpg>)
+
+#### Use Case Diagram - Vendor
+![Vendor Use Case Diagram](<Screenshots/UCD Vendor.jpg>)
+
+#### Sequence Diagram
+![Sequence Diagram](<Screenshots/Sequence Diagram.jpg>)
+
+### 9. Database
+#### Database Structure
 ![Database](<Screenshots/database.jpg>)
 
-Shows the project's database structure.
+#### Database Structure - Additional View
+![Database Additional View](<Screenshots/database1.jpg>)
 
+### 10. Website Design
+#### Website Layout
+![Website Layout](<Screenshots/Website layout.jpg>)
 
-AI Recommendation
-
-![AI Recommendation](Screenshots/AI%20Recommendation.jpg)
-
-This feature recommends suitable event vendors based on the user's event details, budget, selected services, and preferences.
+#### Website Frontend
+![Frontend](<Screenshots/FC.jpg>)
