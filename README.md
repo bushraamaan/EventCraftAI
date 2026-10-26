@@ -1,7 +1,8 @@
 EventCraft AI
+
  Screenshots
 
-** AI Recommendation**
+AI Recommendation
 
 ![AI Recommendation](Screenshots/AI%20Recommendation.jpg)
 
